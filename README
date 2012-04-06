@@ -1,0 +1,22 @@
+- About
+
+I rewrite Makefile for qemu just keeping i386 PC code.
+I want keep qemu more simple.
+
+This code is generated from office QEMU 1.0.1.
+
+ - Environment:
+
+QEMU 1.0.1
+gcc 4.6.1
+lubuntu 11.10
+./configure --target-list="i386-softmmu" --enable-debug-tcg --disable-user --disable-pie --disable-smartcard --disable-libiscsi --disable-smartcard-nss --disable-guest-agent --enable-debug --disable-kvm --disable-blobs --disable-linux-user --disable-xen
+
+ - Test:
+
+Built in a linux image.(Small Linux disk image containing a 2.6.20 Linux kernel, X11 and various utilities to test QEMU)
+
+$make
+$make test
+
+
